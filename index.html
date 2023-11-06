@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA-Based Studybuddy</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Agrega tus estilos CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <img src="media/logo.png" alt="Logo" class="logo">
+            <div class="right-menu">
+                <div class="dropdown">
+                    <button class="dropbtn">¿QUÉ OFRECEMOS?</button>
+                    <div class="dropdown-content">
+                        <p>Holaa!!</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class = "dropbtn">NOSOTROS</button>
+                    <div class="dropdown-content">
+                        <p>Holaa!!</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="container">
+        <!-- ChatGPT -->
+        <section id="chat-section" class="function-section">
+            <h2>StudyBuddy Chat</h2>
+            <div class="chat-container">
+                <div class="user-input">
+                    <input class="user-question" type="text" id="prompt" placeholder="Escribe tu pregunta aquí sobre un tema de estudio...">
+                    <button class="send-button" id="generate">Enviar</button>
+                </div>
+                <p id="output"></p>
+            </div>
+        </section>
+        <!-- Quiz -->
+        <section id="chat-section" class="function-section">
+            <h2>Generador Quiz</h2>
+            <div class="chat-container">
+                <div class="user-input">
+                    <select class="user-question" id="prompt-quiz">
+                    <option value="Hazme un quiz sobre Programación en Python (Recursion y Ciclos) (8 Preguntas con sus respuestas)">Programación en Python</option>
+                    <option value="Hazme un quiz sobre Bases de datos (SQL, NoSQL) (8 Preguntas con sus respuestas)">Bases de datos (SQL, NoSQL)</option>
+                    <option value="Hazme un quiz sobre Cálculo (8 Preguntas con sus respuestas)">Cálculo</option>
+                    <option value="Hazme un quiz sobre Álgebra Lineal (8 Preguntas con sus respuestas)">Álgebra Lineal</option>
+                    <option value="Hazme un quiz sobre Geografía Mundial (estudio de capitales de los países) (8 Preguntas con sus respuestas)">Geografía Mundial (estudio de capitales de los países)</option>
+                    <option value="Hazme un quiz sobre Gramática en inglés Simple Past (8 Preguntas con sus respuestas)">Gramática en inglés Simple Past</option>
+                    <option value="Hazme un quiz sobre Gramática en inglés Verb to be (8 Preguntas con sus respuestas)">Gramática en inglés Verb to be</option>
+                    <option value="Hazme un quiz sobre punteros en C (8 Preguntas con sus respuestas)">Punteros en C</option>
+                    <option value="Hazme un quiz sobre Protocolos en Redes (8 Preguntas con sus respuestas)">Protocolos en Redes</option>
+                    <option value="Hazme un quiz sobre Estadística (8 Preguntas con sus respuestas)">Estadística</option>
+                    <option value="Hazme un quiz sobre IA (8 Preguntas con sus respuestas)">Inteligencia Artificial</option>
+                    </select>
+                    <button class="send-button" id="generate-quiz">Generar</button>
+                </div>
+                <p id="output-quiz"></p>
+            </div>
+        </section>
+        <section>
+            <h2>Fichas de Estudio</h2>
+                <div class="quizlet-match">
+                    <iframe src="https://quizlet.com/230093875/match/embed?i=5gucme&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+                    <iframe src="https://quizlet.com/189318379/match/embed?i=5gucme&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+                    <iframe src="https://quizlet.com/667138561/match/embed?i=5gucme&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+                </div>
+        </section>
+        <br>
+        <br>
+        <!-- Quiz -->
+        <section id="chat-section" class="function-section">
+            <h2>Generador Quiz</h2>
+            <div class="chat-container">
+                <div class="user-input">
+                    <select class="user-question" id="prompt-quiz">
+                    <option value="Hazme un quiz sobre Programación en Python (Recursion y Ciclos) (8 Preguntas con sus respuestas)">Programación en Python</option>
+                    <option value="Hazme un quiz sobre Bases de datos (SQL, NoSQL) (8 Preguntas con sus respuestas)">Bases de datos (SQL, NoSQL)</option>
+                    <option value="Hazme un quiz sobre Cálculo (8 Preguntas con sus respuestas)">Cálculo</option>
+                    <option value="Hazme un quiz sobre Álgebra Lineal (8 Preguntas con sus respuestas)">Álgebra Lineal</option>
+                    <option value="Hazme un quiz sobre Geografía Mundial (estudio de capitales de los países) (8 Preguntas con sus respuestas)">Geografía Mundial (estudio de capitales de los países)</option>
+                    <option value="Hazme un quiz sobre Gramática en inglés Simple Past (8 Preguntas con sus respuestas)">Gramática en inglés Simple Past</option>
+                    <option value="Hazme un quiz sobre Gramática en inglés Verb to be (8 Preguntas con sus respuestas)">Gramática en inglés Verb to be</option>
+                    <option value="Hazme un quiz sobre punteros en C (8 Preguntas con sus respuestas)">Punteros en C</option>
+                    <option value="Hazme un quiz sobre Protocolos en Redes (8 Preguntas con sus respuestas)">Protocolos en Redes</option>
+                    <option value="Hazme un quiz sobre Estadística (8 Preguntas con sus respuestas)">Estadística</option>
+                    <option value="Hazme un quiz sobre IA (8 Preguntas con sus respuestas)">Inteligencia Artificial</option>
+                    </select>
+                    <button class="send-button" id="generate-quiz">Generar</button>
+                </div>
+                <p id="output-quiz"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <img src="media/logo2.png" alt="Logo" class="logo2">
+                <p>© 2023 StudyBuddy · Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Dirección</h5>
+                <ul>
+                    <li>Cartago, Costa Rica</li>
+                    <li>Los Ángeles, Cartago</li>
+                    <li>Mvl: (+506) 8400 5826</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Más Información</h5>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/nosotros">Nosotros</a></li>
+                    <li><a href="/contacto">Contactar</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

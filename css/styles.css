@@ -1,0 +1,262 @@
+/* Reset de estilos y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Blanco para el fondo del body */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #007BFF; /* Azul para el fondo del header */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content */
+.main {
+    background-color: #ffffff; /* Blanco para el fondo del main */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centra el contenido del main */
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000; /* Negro para el fondo del footer */
+    color: #ffffff; /* Letras blancas en el footer */
+    padding: 40px 0;
+    text-align: center; /* Centra el contenido del footer */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .footer-info {
+    flex-basis: calc(30% - 20px);
+    text-align: left;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    flex-basis: calc(23% - 20px);
+    text-align: left;
+}
+
+.footer-links h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
+}
+
+.logo {
+    width: 200px; /* Cambia el tamaño a tu preferencia */
+    height: auto; /* Mantiene la proporción original */
+}
+.logo2 {
+    width: 385px; /* Cambia el tamaño a tu preferencia */
+    height: auto; /* Mantiene la proporción original */
+}
+
+.navbar {
+    background-color: #007BFF; /* Cambia al color azul deseado */
+    color: #000; /* Color de texto en negro */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
+    align-items: center;
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.right-menu {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Espaciado entre elementos */
+}
+
+.dropbtn {
+    background-color: inherit;
+    color: #000; /* Color de texto en negro */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content p {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Estilos para el chat */
+.chat-container {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.chat-messages {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.user-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-question {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.send-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#output {
+    text-align: justify; /* Justificar el texto */
+    padding: 10px; /* Agregar espacio alrededor del texto */
+    border: 2px solid #0074D9; /* Agregar un borde azul alrededor del texto */
+    background-color: #E5F2FF; /* Agregar un fondo azul claro */
+    border-radius: 5px; /* Redondear las esquinas del borde */
+    margin: 10px 0; /* Agregar espacio en la parte superior e inferior */
+    color: #333; /* Color del texto */
+}
+
+#output-quiz {
+    text-align: justify; /* Justificar el texto */
+    padding: 10px; /* Agregar espacio alrededor del texto */
+    border: 2px solid #0074D9; /* Agregar un borde azul alrededor del texto */
+    background-color: #E5F2FF; /* Agregar un fondo azul claro */
+    border-radius: 5px; /* Redondear las esquinas del borde */
+    margin: 10px 0; /* Agregar espacio en la parte superior e inferior */
+    color: #333; /* Color del texto */
+    word-break: break-all; /* Agregar esta propiedad para dividir palabras en líneas */
+    white-space: pre-line; /* Agregar esta propiedad para dividir el texto en líneas */
+}

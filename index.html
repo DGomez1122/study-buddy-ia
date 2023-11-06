@@ -7,25 +7,54 @@
     <title>IA-Based Studybuddy</title>
     <link rel="stylesheet" href="css/styles.css"> <!-- Agrega tus estilos CSS -->
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYSLF419WY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FYSLF419WY');
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <img src="media/logo.png" alt="Logo" class="logo">
             <div class="right-menu">
                 <div class="dropdown">
                     <button class="dropbtn">¿QUÉ OFRECEMOS?</button>
                     <div class="dropdown-content">
-                        <p>Holaa!!</p>
+                        <p>
+                            "StudyBuddy es tu compañero de aprendizaje todo en uno. Ofrecemos:
+                            <br><br>
+                            - Generación automática de preguntas y respuestas para ayudarte a estudiar de manera efectiva.
+                            <br>
+                            - Cuestionarios personalizados para poner a prueba tus conocimientos.
+                            <br>
+                            - Generador de Quices en temas específicos, como Programación en Python, Bases de datos y más.
+                            <br>
+                            - Acceso a una amplia gama de recursos educativos.
+                            <br>
+                            - Interfaz de usuario amigable y fácil de usar.
+                            <br>
+                            - ¡Totalmente gratis!
+                            <br><br>
+                            Simplifica tu proceso de estudio con StudyBuddy y obtén resultados más eficaces."</p>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class = "dropbtn">NOSOTROS</button>
                     <div class="dropdown-content">
-                        <p>Holaa!!</p>
+                        <p>
+                            En StudyBuddy, nos dedicamos a proporcionar soluciones de aprendizaje asistidas por inteligencia artificial. Nuestra <b>misión</b> es hacer que el aprendizaje sea más accesible, interactivo y efectivo para todos. Con un equipo apasionado por la educación y la tecnología, hemos desarrollado herramientas innovadoras que ayudan a los estudiantes a alcanzar sus metas académicas y profesionales.
+                            <br><br>
+                            Nuestra <b>visión</b> es transformar la forma en que las personas adquieren conocimiento y habilidades, aprovechando el poder de la inteligencia artificial. Trabajamos incansablemente para crear experiencias de aprendizaje personalizadas y efectivas que se adapten a las necesidades de cada estudiante.
+                        </p>
                     </div>
                 </div>
             </div>
+            <img src="media/logo.png" alt="Logo" class="logo">
         </nav>
     </header>
 
@@ -75,28 +104,9 @@
         </section>
         <br>
         <br>
-        <!-- Quiz -->
-        <section id="chat-section" class="function-section">
-            <h2>Generador Quiz</h2>
-            <div class="chat-container">
-                <div class="user-input">
-                    <select class="user-question" id="prompt-quiz">
-                    <option value="Hazme un quiz sobre Programación en Python (Recursion y Ciclos) (8 Preguntas con sus respuestas)">Programación en Python</option>
-                    <option value="Hazme un quiz sobre Bases de datos (SQL, NoSQL) (8 Preguntas con sus respuestas)">Bases de datos (SQL, NoSQL)</option>
-                    <option value="Hazme un quiz sobre Cálculo (8 Preguntas con sus respuestas)">Cálculo</option>
-                    <option value="Hazme un quiz sobre Álgebra Lineal (8 Preguntas con sus respuestas)">Álgebra Lineal</option>
-                    <option value="Hazme un quiz sobre Geografía Mundial (estudio de capitales de los países) (8 Preguntas con sus respuestas)">Geografía Mundial (estudio de capitales de los países)</option>
-                    <option value="Hazme un quiz sobre Gramática en inglés Simple Past (8 Preguntas con sus respuestas)">Gramática en inglés Simple Past</option>
-                    <option value="Hazme un quiz sobre Gramática en inglés Verb to be (8 Preguntas con sus respuestas)">Gramática en inglés Verb to be</option>
-                    <option value="Hazme un quiz sobre punteros en C (8 Preguntas con sus respuestas)">Punteros en C</option>
-                    <option value="Hazme un quiz sobre Protocolos en Redes (8 Preguntas con sus respuestas)">Protocolos en Redes</option>
-                    <option value="Hazme un quiz sobre Estadística (8 Preguntas con sus respuestas)">Estadística</option>
-                    <option value="Hazme un quiz sobre IA (8 Preguntas con sus respuestas)">Inteligencia Artificial</option>
-                    </select>
-                    <button class="send-button" id="generate-quiz">Generar</button>
-                </div>
-                <p id="output-quiz"></p>
-            </div>
+        <!-- Analisis de Actividad -->
+        <h2>Analisis de Actividad</h2>
+        <canvas id="miGrafico" width="400" height="200"></canvas>
         </section>
     </main>
 
